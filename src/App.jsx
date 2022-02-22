@@ -4,17 +4,21 @@ import CoinDetailPage from './pages/CoinDetailPage'
 import CoinSummaryPage from './pages/CoinSummaryPage'
 import Header from './components/Header'
 import "./App.css"
+import { WatchListContextProvider } from './context/watchListContext'
 
 const App = () => {
   return (
     <div>
-        <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route exact path="/" component={CoinSummaryPage} />
-            </Routes>
-                
-        </BrowserRouter>
+        <WatchListContextProvider>
+          <BrowserRouter>
+              <Header />
+              <Routes>
+                  <Route exact path="/" element={<CoinSummaryPage/>} />
+              </Routes>
+            
+
+          </BrowserRouter>
+        </WatchListContextProvider>
     </div>
   )
 }
