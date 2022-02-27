@@ -5,20 +5,31 @@
   text-decoration: none !important;
 }
 
+h1 {
+  color: #ba001f;
+}
+
 body {
-  background-color: #263238;
+  background-color: rgb(31, 41, 41);
 }
 
 ul {
   list-style: none;
+  background-color: #fefdf8;
 }
 
 .coinlist-image {
   width: 50px;
 }
 
+
 .coinlist-item {
   display: flex;
+  background-color: rgb(240, 240, 240);
+}
+
+.coinlist-item:hover {
+  background-color: rgb(201, 231, 241);
 }
 
 .coinsummary {

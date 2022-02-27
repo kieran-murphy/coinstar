@@ -14,6 +14,7 @@ const App = () => {
               <Header />
               <Routes>
                   <Route exact path="/" element={<CoinSummaryPage/>} />
+                  <Route path="/coins/:id" element={<CoinDetailPage/>} />
               </Routes>
             
 
